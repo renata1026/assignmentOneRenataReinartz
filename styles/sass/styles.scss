@@ -1,0 +1,35 @@
+@use 'variables' as *;
+@use 'setup';
+@use 'header';
+@use 'nav';
+
+// @use 'partials/setup';
+// @use 'partials/nav';
+
+@mixin position($type, $top, $right) {
+    position: $type;
+    top: $top;
+    right: $right;
+}
+
+div {
+    @include position(absolute, 50px, 50px);
+}
+
+// div {
+//     position: absolute;
+//     top: 50px;
+//     right: 50px;
+// }
+
+$baseFont: 'Helvetica';
+
+// body {
+//     background-color: green;
+//     font-family: $baseFont;
+// }
+
+h1 {
+    font-size: 20px;
+    color: $ffPrimary;
+}

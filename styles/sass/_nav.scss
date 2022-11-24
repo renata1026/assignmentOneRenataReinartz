@@ -1,0 +1,19 @@
+@use 'variables' as *;
+
+nav {
+    width: 500px;
+    background-color: papayawhip;
+
+    li {
+        border: 1px solid black;
+
+        a {
+            color: $ffPrimary;
+
+            &:hover,
+            &:focus {
+                color: blue;
+            }
+        }
+    }
+}
