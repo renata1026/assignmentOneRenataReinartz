@@ -1,0 +1,32 @@
+@use 'variables' as *;
+
+// Blog Section //
+
+.blogImageOne img,
+.blogImageTwo img {
+    height: 18vh;
+    object-fit: cover;
+    width: 100%;
+}
+
+.blog p {
+    color: $clrDarkAccent;
+}
+
+.blog h3 {
+    margin-top: 2em;
+}
+
+.textOne,
+.textTwo {
+    text-align: center;
+}
+
+span {
+    display: block;
+}
+
+.blog button {
+    background-color: $clrDark;
+    color: $clrLight;
+}

@@ -1,6 +1,8 @@
 @use 'variables' as *;
 
-nav {
+nav .wrapper {
+    // position: absolute;
+
     ul {
         display: flex;
         justify-content: space-around;
@@ -15,6 +17,16 @@ nav {
         }
     }
 }
+
+/* The navbar */
+.topnav {
+    position: absolute;
+    top: 1em;
+    overflow: hidden;
+}
+
+/* Navbar links */
+
 
 // nav {
 //     width: 500px;
@@ -34,13 +46,15 @@ nav {
 //     }
 // }
 .hamburger {
-    position: absolute;
+    float: right;
+    position: relative;
 }
 
-.fa-solid {
+.hamburger .fa-solid {
     color: #fff;
     font-size: 3rem;
-    display: relative;
-    right: 10rem;
+    position: absolute;
+    bottom: 11em;
+    right: 1em;
 
 }

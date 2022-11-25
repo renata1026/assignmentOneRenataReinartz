@@ -9,7 +9,7 @@ $ffBody: 'Roboto', sans-serif;
 $clrLight: #fcfcfc;
 $clrDark: #152D20;
 $clrLightAccent: #C3D3CB;
-$clrDarkAccent: #0000;
+$clrDarkAccent: black;
 
 //font size convert to REM//
 // H1: 120px;
@@ -29,11 +29,19 @@ h1 {
 }
 
 h2 {
-    @include fontSize(12);
+    @include fontSize(40);
+}
+
+h3 {
+    @include fontSize(25);
+}
+
+h4 {
+    @include fontSize(30);
 }
 
 p {
-    @include fontSize(7);
+    @include fontSize(18);
 }
 
 button {

@@ -4,13 +4,23 @@ h1 {
 }
 
 h2 {
-  font-size: 12px;
-  font-size: 0.75rem;
+  font-size: 40px;
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 25px;
+  font-size: 1.5625rem;
+}
+
+h4 {
+  font-size: 30px;
+  font-size: 1.875rem;
 }
 
 p {
-  font-size: 7px;
-  font-size: 0.4375rem;
+  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 button {
@@ -280,26 +290,63 @@ html {
   overflow: hidden;
 }
 
-.wrapper {
-  background-color: rgba(0, 0, 0, 0);
+nav .wrapper ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+nav .wrapper ul li {
+  list-style: none;
+}
+nav .wrapper ul li a {
+  text-decoration: none;
+  color: #fcfcfc;
 }
 
-.left {
-  width: 90%;
+/* The navbar */
+.topnav {
+  position: absolute;
+  top: 1em;
+  overflow: hidden;
 }
 
-header {
-  background-image: url(../images/image-1.jpg);
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
+/* Navbar links */
+.hamburger {
+  float: right;
+  position: relative;
+}
+
+.hamburger .fa-solid {
+  color: #fff;
+  font-size: 3rem;
+  position: absolute;
+  bottom: 11em;
+  right: 1em;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+  display: block;
+  width: 100vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 33% 64%;
+     object-position: 33% 64%;
+  height: 600px;
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 h1 {
+  position: absolute;
+  top: 0.2em;
   color: #fcfcfc;
   text-transform: uppercase;
   opacity: 0.7;
@@ -309,32 +356,136 @@ h1 span {
   display: block;
 }
 
-nav ul {
+.gallery {
+  background-color: #C3D3CB;
+  margin: 0 auto;
+  padding: 2em 0;
+}
+
+.gallery h2 {
+  color: #152D20;
+  opacity: 0.8;
+}
+
+.images {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  padding: 1em;
+  gap: 0.5em;
 }
-nav ul li {
-  list-style: none;
+
+.images img {
+  width: 50%;
 }
-nav ul li a {
-  text-decoration: none;
+
+.icons {
+  background-color: #152D20;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 3em 0;
+}
+
+.icons .fa-solid {
   color: #fcfcfc;
 }
 
-.hamburger {
-  position: absolute;
+.icons span {
+  display: block;
 }
 
-.fa-solid {
-  color: #fff;
-  font-size: 3rem;
-  display: relative;
-  right: 10rem;
+.blogImageOne img,
+.blogImageTwo img {
+  height: 18vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.blog p {
+  color: black;
+}
+
+.blog h3 {
+  margin-top: 2em;
+}
+
+.textOne,
+.textTwo {
+  text-align: center;
+}
+
+span {
+  display: block;
+}
+
+.blog button {
+  background-color: #152D20;
+  color: #fcfcfc;
+}
+
+.about {
+  background-color: #152D20;
+  margin: 0 auto;
+}
+
+.left {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 3em;
+}
+
+img .left {
+  width: 100%;
+  height: auto;
+}
+
+h2 {
+  color: #fcfcfc;
+  text-transform: uppercase;
+  opacity: 0.8;
+  text-align: center;
+}
+
+.right {
+  text-align: center;
 }
 
 html {
   font-family: "Fredericka the Great", cursive;
+}
+
+h3 {
+  font-family: "Fredericka the Great", cursive;
+  text-transform: uppercase;
+  color: #152D20;
+  opacity: 0.8;
+}
+
+h4 {
+  font-family: "Cormorant Garamond", serif;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  color: #fcfcfc;
+  line-height: 29px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 1.2em;
+}
+
+button {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 1em 2.5em;
+  margin-top: 2em;
+  margin-bottom: 3em;
 }

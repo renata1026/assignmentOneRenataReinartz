@@ -1,0 +1,42 @@
+@use 'variables' as *;
+
+// Gallery //
+.gallery {
+    background-color: $clrLightAccent;
+    margin: 0 auto;
+    padding: 2em 0;
+
+}
+
+.gallery h2 {
+    color: $clrDark;
+    opacity: 0.8;
+}
+
+.images {
+    display: flex;
+    padding: 1em;
+    gap: 0.5em;
+}
+
+.images img {
+    width: 50%;
+}
+
+//Icons//
+
+.icons {
+    background-color: $clrDark;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 3em 0;
+}
+
+.icons .fa-solid {
+    color: $clrLight;
+}
+
+.icons span {
+    display: block;
+}
