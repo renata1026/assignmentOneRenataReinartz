@@ -1,7 +1,7 @@
 //scss variables
 
 //font family//
-$ffPrimary: 'Fredericka the Great' cursive;
+$ffPrimary: 'Fredericka the Great', cursive;
 $ffSecondary: 'Cormorant Garamond', serif;
 $ffBody: 'Roboto', sans-serif;
 
@@ -11,12 +11,35 @@ $clrDark: #152D20;
 $clrLightAccent: #C3D3CB;
 $clrDarkAccent: #0000;
 
-//font size//
-$fsH1: 120px;
-$fsHT: 51px;
-$fsH2: 35px;
-$fsBody: 20px;
-$fsButton: 18px;
+//font size convert to REM//
+// H1: 120px;
+// HT: 51px;
+// H2: 35px;
+// Body: 20px;
+// Button: 18px;
+
+//Mobile
+@mixin fontSize($sizeValue) {
+    font-size: $sizeValue * 1px;
+    font-size: ($sizeValue/16) * 1rem;
+}
+
+h1 {
+    @include fontSize(40);
+}
+
+h2 {
+    @include fontSize(12);
+}
+
+p {
+    @include fontSize(7);
+}
+
+button {
+    @include fontSize(6);
+}
+
 
 //line height//
 $lhH1: 117px;

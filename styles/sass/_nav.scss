@@ -1,19 +1,46 @@
 @use 'variables' as *;
 
 nav {
-    width: 500px;
-    background-color: papayawhip;
+    ul {
+        display: flex;
+        justify-content: space-around;
 
-    li {
-        border: 1px solid black;
+        li {
+            list-style: none;
 
-        a {
-            color: $ffPrimary;
-
-            &:hover,
-            &:focus {
-                color: blue;
+            a {
+                text-decoration: none;
+                color: $clrLight;
             }
         }
     }
+}
+
+// nav {
+//     width: 500px;
+//     background-color: papayawhip;
+
+//     li {
+//         border: 1px solid black;
+
+//         a {
+//             color: $ffPrimary;
+
+//             &:hover,
+//             &:focus {
+//                 color: blue;
+//             }
+//         }
+//     }
+// }
+.hamburger {
+    position: absolute;
+}
+
+.fa-solid {
+    color: #fff;
+    font-size: 3rem;
+    display: relative;
+    right: 10rem;
+
 }
