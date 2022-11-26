@@ -14,13 +14,24 @@ h3 {
 }
 
 h4 {
-  font-size: 30px;
-  font-size: 1.875rem;
+  font-size: 28px;
+  font-size: 1.75rem;
 }
 
 p {
   font-size: 18px;
   font-size: 1.125rem;
+}
+
+.contact p,
+.copyright {
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+
+footer p {
+  font-size: 16px;
+  font-size: 1rem;
 }
 
 button {
@@ -381,6 +392,7 @@ h1 span {
 
 .icons {
   background-color: #152D20;
+  font-size: 3rem;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -389,7 +401,15 @@ h1 span {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 3em 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+}
+
+.icons h4 {
+  margin: 1em;
 }
 
 .icons .fa-solid {
@@ -398,6 +418,71 @@ h1 span {
 
 .icons span {
   display: block;
+}
+
+footer {
+  background-color: #152D20;
+}
+
+footer h4 {
+  text-align: center;
+  color: #fcfcfc;
+  margin: 0.5em auto;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer li {
+  list-style: none;
+  margin-top: 3em;
+}
+
+footer a {
+  color: #fcfcfc;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1em;
+}
+
+fieldset {
+  border: none;
+}
+
+input,
+fieldset button {
+  width: 100%;
+  padding: 0.75em;
+  text-align: center;
+}
+
+fieldset button {
+  background-color: black;
+  color: #fcfcfc;
+  border: 1px solid black;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.contact h4 {
+  margin: 0 auto;
+}
+
+.contact {
+  line-height: 26px;
+  margin: 1em 0;
+}
+
+.copyright {
+  background-color: black;
+  padding: 0.5em;
 }
 
 .blogImageOne img,
@@ -485,7 +570,9 @@ p {
 button {
   text-transform: uppercase;
   letter-spacing: 1px;
-  padding: 1em 2.5em;
+  line-height: 29px;
+  border: 1px solid #152D20;
+  padding: 0.6em 2em;
   margin-top: 2em;
   margin-bottom: 3em;
 }

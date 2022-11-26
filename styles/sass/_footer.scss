@@ -1,0 +1,65 @@
+@use 'variables' as *;
+
+// footer//
+footer {
+    background-color: $clrDark;
+}
+
+footer h4 {
+    text-align: center;
+    color: $clrLight;
+    margin: 0.5em auto;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+
+}
+
+footer li {
+    list-style: none;
+    margin-top: 3em;
+}
+
+footer a {
+    color: $clrLight;
+    font-family: $ffBody;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1em;
+
+}
+
+fieldset {
+    border: none;
+}
+
+input,
+fieldset button {
+    width: 100%;
+    padding: 0.75em;
+    text-align: center;
+}
+
+fieldset button {
+    background-color: $clrDarkAccent;
+    color: $clrLight;
+    border: 1px solid $clrDarkAccent;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+.contact h4 {
+    margin: 0 auto;
+}
+
+.contact {
+    line-height: $lhContact;
+    margin: 1em 0;
+}
+
+.copyright {
+    background-color: $clrDarkAccent;
+    padding: 0.5em;
+}
