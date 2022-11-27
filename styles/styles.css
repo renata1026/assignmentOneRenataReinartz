@@ -39,6 +39,20 @@ button {
   font-size: 0.375rem;
 }
 
+@media (min-with: 600px) {
+  h1 {
+    font-size: 120px;
+  }
+  h2 {
+    font-size: 35px;
+  }
+  p {
+    font-size: 20px;
+  }
+  button {
+    font-size: 18px;
+  }
+}
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -367,6 +381,11 @@ h1 span {
   display: block;
 }
 
+@media (min-width: 600px) {
+  h1 {
+    left: 7em;
+  }
+}
 .gallery {
   background-color: #C3D3CB;
   margin: 0 auto;

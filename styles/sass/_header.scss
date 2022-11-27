@@ -30,3 +30,10 @@ h1 {
 h1 span {
     display: block;
 }
+
+@media (min-width:600px) {
+    h1 {
+        // font-size: 120px;
+        left: 7em;
+    }
+}
