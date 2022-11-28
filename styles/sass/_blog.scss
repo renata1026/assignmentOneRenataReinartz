@@ -30,3 +30,52 @@ span {
     background-color: $clrDark;
     color: $clrLight;
 }
+
+@media (min-width:600px) {
+
+    .blogOne,
+    .blogTwo {
+        display: flex;
+
+    }
+
+    .blogImageOne {
+        width: 60%;
+    }
+
+    .textOne {
+        width: 40%;
+    }
+
+    .blogImageTwo {
+        width: 48%;
+    }
+
+    .textTwo {
+        width: 40%;
+    }
+
+
+    .blogImageOne img,
+    .blogImageTwo img {
+        height: auto;
+    }
+
+    .textOne {
+        order: -1;
+    }
+
+    .textOne p,
+    .textTwo p,
+    .textOne,
+    .textTwo {
+        text-align: left;
+        padding: 0;
+    }
+
+    .textOne,
+    .textTwo {
+        margin: 0 5em;
+    }
+
+}

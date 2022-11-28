@@ -25,6 +25,7 @@ h1 {
     color: $clrLight;
     text-transform: uppercase;
     opacity: 0.7;
+    text-align: right;
 }
 
 h1 span {
@@ -32,8 +33,30 @@ h1 span {
 }
 
 @media (min-width:600px) {
+
     h1 {
-        // font-size: 120px;
+        font-size: 90px;
         left: 7em;
     }
+
+    .social {
+        position: absolute;
+        color: $clrLight;
+        font-size: 1.5rem;
+        top: 15em;
+        right: 1em;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    i.fa-brands {
+        margin: 0.5em;
+    }
 }
+
+//     i.fa-brands a:hover,
+//     a:focus {
+//         color: $clrDarkAccent;
+//     }
+// }

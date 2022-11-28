@@ -24,7 +24,7 @@ footer li {
 
 footer a {
     color: $clrLight;
-    font-family: $ffBody;
+    font-family: $ffSecondary;
     text-decoration: none;
     text-transform: uppercase;
     padding: 1em;
@@ -51,15 +51,80 @@ fieldset button {
 }
 
 .contact h4 {
-    margin: 0 auto;
+    margin: 1em;
 }
 
-.contact {
+.updated,
+.contactTitle {
     line-height: $lhContact;
-    margin: 1em 0;
+    // margin: 1em 0;
+    text-transform: uppercase;
 }
 
 .copyright {
     background-color: $clrDarkAccent;
     padding: 0.5em;
+}
+
+@media (min-width:600px) {
+
+    form .wrapper {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    form {
+        padding-top: 2em;
+        padding-bottom: 3em;
+    }
+
+    footer ul {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    footer li {
+        margin: 0;
+        margin-top: 1em;
+        text-align: left;
+
+    }
+
+    footer a {
+        padding: 0;
+    }
+
+    footer h4,
+    .contact h4,
+    footer li {
+        margin: 0 auto;
+    }
+
+    #email {
+        width: 70%;
+        padding: 0;
+        line-height: 0;
+    }
+
+    .email {
+        display: flex;
+        font-size: 20px;
+    }
+
+    input,
+    fieldset button {
+        font-size: 3%;
+    }
+
+    .email button {
+        padding: 1em;
+        width: 33%;
+    }
+
+    .contact h4,
+    .contact p {
+        text-align: right;
+        padding: 0;
+    }
 }

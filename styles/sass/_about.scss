@@ -30,3 +30,40 @@ h2 {
 .right {
     text-align: center;
 }
+
+@media (min-width:600px) {
+    h2 {
+        font-size: 51px;
+    }
+
+    .about .wrapper {
+        display: flex;
+    }
+
+    .left {
+        flex-basis: 29%;
+        padding: 3em 1em 3em 0;
+    }
+
+    .right {
+        flex-basis: 70%;
+    }
+
+    .right,
+    .right p,
+    .right h2 {
+        text-align: left;
+        margin-left: 0.1em;
+    }
+
+    .right h2 {
+        margin-bottom: 0.5em;
+    }
+
+    .right p {
+        margin: -0.92em;
+        margin-bottom: 0.1em;
+    }
+
+
+}

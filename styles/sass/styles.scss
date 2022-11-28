@@ -46,3 +46,17 @@ button {
     margin-top: 2em;
     margin-bottom: 3em;
 }
+
+button a:hover,
+.blog button a:hover,
+a:focus {
+    background-color: $clrLightAccent;
+}
+
+@media (min-width:600px) {
+    .wrapper:not(.wrapper.hero) {
+        margin: 0 auto;
+        width: 90%;
+        max-width: 1200px;
+    }
+}

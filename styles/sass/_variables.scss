@@ -11,6 +11,14 @@ $clrDark: #152D20;
 $clrLightAccent: #C3D3CB;
 $clrDarkAccent: black;
 
+//Desktop font size//
+//font size convert to REM//
+// H1: 120px;
+// HT: 51px;
+// H2: 35px;
+// Body: 20px;
+// Button: 18px;
+
 //Mobile
 @mixin fontSize($sizeValue) {
     font-size: $sizeValue * 1px;
@@ -46,6 +54,10 @@ footer p {
     @include fontSize(16);
 }
 
+footer h4 {
+    @include fontSize(20);
+}
+
 button {
     @include fontSize(6);
 }
@@ -56,27 +68,21 @@ $lhBody: 29px;
 $lhButton: 29px;
 $lhContact: 26px;
 
-//Desktop font size//
-//font size convert to REM//
-// H1: 120px;
-// HT: 51px;
-// H2: 35px;
-// Body: 20px;
-// Button: 18px;
-@media (min-with:600px) {
-    h1 {
-        font-size: 120px;
-    }
 
-    h2 {
-        font-size: 35px;
-    }
+// @media (min-width:600px) {
+//     h1 {
+//         font-size: 120px;
+//     }
 
-    p {
-        font-size: 20px;
-    }
+//     h2 {
+//         font-size: 35px;
+//     }
 
-    button {
-        font-size: 18px;
-    }
-}
+//     p {
+//         font-size: 20px;
+//     }
+
+//     button {
+//         font-size: 18px;
+//     }
+// }

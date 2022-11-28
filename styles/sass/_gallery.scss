@@ -47,3 +47,25 @@
 .icons span {
     display: block;
 }
+
+@media (min-width:600px) {
+
+    .text span {
+        display: block;
+    }
+
+    .images {
+        gap: 2em;
+    }
+
+    .icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 1.2em 0;
+    }
+
+    .icons h4 {
+        font-size: 35px;
+    }
+}
