@@ -23,6 +23,10 @@
     width: 50%;
 }
 
+.images img.image3 {
+    display: none;
+}
+
 //Icons//
 
 .icons {
@@ -56,6 +60,10 @@
 
     .images {
         gap: 2em;
+    }
+
+    .images img.image3 {
+        display: inline;
     }
 
     .icons {

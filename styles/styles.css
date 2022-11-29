@@ -35,8 +35,8 @@ footer p {
 }
 
 footer h4 {
-  font-size: 20px;
-  font-size: 1.25rem;
+  font-size: 28px;
+  font-size: 1.75rem;
 }
 
 button {
@@ -306,56 +306,14 @@ html {
   overflow: hidden;
 }
 
-.navMenu .nav-menu {
-  position: fixed;
-  left: -100%;
-  top: 70px;
-  gap: 0;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  background-color: black;
-  width: 100%;
-  text-align: center;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-.navMenu .nav-item {
-  margin: 16px 0;
-}
-.navMenu .nav-menu.active {
-  left: 0;
-}
-.navMenu li {
-  list-style: none;
-}
-.navMenu li a {
-  text-decoration: none;
-  color: #fcfcfc;
-  opacity: 0.8;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-.navMenu .navLink {
-  -webkit-transition: 0.7s ease;
-  transition: 0.7s ease;
-}
-.navMenu .navLink:hover {
-  color: blue;
-}
-
 /* The navbar */
-.topnav {
+.topNav {
   position: absolute;
   top: 1em;
   overflow: hidden;
 }
 
-.topnav li {
+.topNav li {
   padding: 0.5em;
 }
 
@@ -373,8 +331,13 @@ html {
   right: 1em;
 }
 
+.social,
+.navMenu {
+  display: none;
+}
+
 @media (min-width: 600px) {
-  nav .wrapper ul {
+  .topNav ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -383,15 +346,27 @@ html {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .hamburger {
+  .topNav ul li {
+    list-style: none;
+  }
+  .topNav ul li a {
+    color: #fcfcfc;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .topNav a:hover,
+a:focus {
+    color: #C3D3CB;
+  }
+  .hamburger .fa-solid {
     display: none;
     cursor: pointer;
     -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
-  .hamburger.active {
-    opacity: 0;
-    -webkit-transform: translateY(8px) rotate(45deg);
-            transform: translateY(8px) rotate(45deg);
+  .navMenu {
+    display: inline;
   }
 }
 .hero {
@@ -403,8 +378,10 @@ html {
   width: 100vw;
   -o-object-fit: cover;
      object-fit: cover;
+  object-fit: cover;
   -o-object-position: 33% 64%;
      object-position: 33% 64%;
+  object-position: 33% 64%;
   height: 600px;
 }
 
@@ -414,7 +391,8 @@ img {
 
 h1 {
   position: absolute;
-  top: 0.2em;
+  top: 0em;
+  left: 1em;
   color: #fcfcfc;
   text-transform: uppercase;
   opacity: 0.7;
@@ -429,6 +407,7 @@ h1 span {
   h1 {
     font-size: 90px;
     left: 7em;
+    top: 0.2em;
   }
   .social {
     position: absolute;
@@ -443,6 +422,16 @@ h1 span {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .fa-instagram:hover,
+.fa-instagram:focus,
+.fa-facebook-f:hover,
+.fa-facebook-f:focus,
+.fa-snapchat:hover,
+.fa-snapchat:focus,
+.fa-twitter:hover,
+.fa-twitter:focus {
+    color: #c3d3cd;
   }
   i.fa-brands {
     margin: 0.5em;
@@ -469,6 +458,10 @@ h1 span {
 
 .images img {
   width: 50%;
+}
+
+.images img.image3 {
+  display: none;
 }
 
 .icons {
@@ -507,6 +500,9 @@ h1 span {
   }
   .images {
     gap: 2em;
+  }
+  .images img.image3 {
+    display: inline;
   }
   .icons {
     display: -webkit-box;
@@ -576,8 +572,12 @@ fieldset button {
   margin-bottom: 0.5em;
 }
 
+.info {
+  margin: 0 auto;
+}
+
 .contact h4 {
-  margin: 1em;
+  margin-top: 1em;
 }
 
 .updated,
@@ -620,10 +620,11 @@ fieldset button {
   footer a {
     padding: 0;
   }
-  footer h4,
-.contact h4,
-footer li {
+  footer h4 {
     margin: 0 auto;
+  }
+  footer li {
+    margin: 0.2em;
   }
   #email {
     width: 70%;
@@ -638,21 +639,27 @@ footer li {
   }
   input,
 fieldset button {
-    font-size: 3%;
+    font-size: 16px;
+    max-height: 2em;
   }
   .email button {
-    padding: 1em;
-    width: 33%;
+    width: 40%;
+    padding: 0;
   }
   .contact h4,
 .contact p {
     text-align: right;
     padding: 0;
+    margin-top: 0;
+  }
+  .contact h4,
+.updated {
+    font-size: 20px;
   }
 }
 .blogImageOne img,
 .blogImageTwo img {
-  height: 18vh;
+  height: 25vh;
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
@@ -687,21 +694,15 @@ span {
     display: -ms-flexbox;
     display: flex;
   }
-  .blogImageOne {
-    width: 60%;
-  }
-  .textOne {
-    width: 40%;
-  }
-  .blogImageTwo {
-    width: 48%;
-  }
-  .textTwo {
-    width: 40%;
+  .blogImageOne,
+.textOne,
+.blogImageTwo,
+.textTwo {
+    width: 50%;
   }
   .blogImageOne img,
 .blogImageTwo img {
-    height: auto;
+    height: 100%;
   }
   .textOne {
     -webkit-box-ordinal-group: 0;
@@ -717,7 +718,8 @@ span {
   }
   .textOne,
 .textTwo {
-    margin: 0 5em;
+    padding: 0 10vh;
+    text-align: left;
   }
 }
 .about {
@@ -725,15 +727,25 @@ span {
   margin: 0 auto;
 }
 
-.left {
-  width: 90%;
-  margin: 0 auto;
-  padding-top: 3em;
+.about h2 {
+  margin: 0.2em auto;
 }
 
-img .left {
-  width: 100%;
-  height: auto;
+.left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.left img {
+  max-width: 100%;
+  height: 30vh;
+  width: 90%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  margin: 3em auto;
 }
 
 h2 {
@@ -748,6 +760,9 @@ h2 {
 }
 
 @media (min-width: 600px) {
+  .about h2 {
+    margin: auto;
+  }
   h2 {
     font-size: 51px;
   }
@@ -755,6 +770,14 @@ h2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .left {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .left img {
+    width: 100%;
+    height: auto;
   }
   .left {
     -ms-flex-preferred-size: 29%;
@@ -772,11 +795,10 @@ h2 {
     margin-left: 0.1em;
   }
   .right h2 {
-    margin-bottom: 0.5em;
+    margin-top: 2em;
   }
   .right p {
-    margin: -0.92em;
-    margin-bottom: 0.1em;
+    margin-left: -0.7em;
   }
 }
 html {
@@ -807,23 +829,31 @@ p {
 button {
   text-transform: uppercase;
   letter-spacing: 1px;
+  font-family: "Cormorant Garamond", serif;
   line-height: 29px;
   border: 1px solid #152D20;
   padding: 0.6em 2em;
-  margin-top: 2em;
-  margin-bottom: 3em;
+  margin: 3em 0;
 }
 
-button a:hover,
-.blog button a:hover,
-a:focus {
-  background-color: #C3D3CB;
+button:hover,
+button:focus {
+  background-color: #c3d3cd;
+  color: black;
+  border: 1px solid #c3d3cd;
 }
 
 @media (min-width: 600px) {
-  .wrapper:not(.wrapper.hero) {
+  .wrapper {
     margin: 0 auto;
     width: 90%;
     max-width: 1200px;
+  }
+  button {
+    margin-top: 3em;
+    padding: 0.6em 2em;
+  }
+  .email button {
+    margin-top: 0;
   }
 }

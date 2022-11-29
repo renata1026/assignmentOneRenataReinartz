@@ -20,7 +20,7 @@
 	<header>
 		<!-- --Start of Navigation-- -->
 		<nav>
-			<div class="hero" id="home">
+			<div class="hero" id="Home">
 				<img src="images/image-1.jpg">
 				<h1>Animal <span>Refuge</span></h1>
 			</div>
@@ -29,7 +29,7 @@
 				<div class="hamburger">
 					<i class="fa-solid fa-bars"></i>
 				</div>
-				<div class="topnav">
+				<div class="topNav">
 					<ul class="navMenu">
 						<li class="navItem"><a href="#Home" class=navLink>Home</a></li>
 						<li class="navItem"><a href="#About" class=navLink>About</a></li>
@@ -64,10 +64,7 @@
 						distinctio id ut assumenda saepe in eligendi optio cumque architecto voluptates corrupti ex
 						nostrum laboriosam, possimus voluptatibus dolores laudantium!
 						Quibusdam maxime, fugit a quos labore earum quasi unde sit expedita facere consequatur, dolorem,
-						nihil autem. Deleniti ipsam doloribus quisquam atque iusto corporis eaque, ad, sed molestias
-						rem, possimus neque?Deleniti ipsam doloribus quisquam atque iusto corporis eaque, ad, sed
-						molestias
-						rem, possimus neque? </p>
+						nihil autem. Deleniti ipsam doloribus quisquam atque iusto corporis eaque, ad, sed molestias</p>
 					<button>Read More</button>
 				</div>
 				<!-- --Close Wrapper-- -->
@@ -82,9 +79,9 @@
 					<h2>Some of our <span>friends</span></h2>
 				</div>
 				<div class="images">
-					<img src="images/image-5.jpg" alt="iguana on a tree">
-					<img src="images/image-4.jpg" alt="sheep out on a field">
-					<img src="images/image-3.jpg" alt="a parrot eating food">
+					<img src="images/image-5.jpg" class="image1" alt="iguana on a tree">
+					<img src="images/image-4.jpg" class="image2" alt="sheep out on a field">
+					<img src="images/image-3.jpg" class="image3" alt="a parrot eating food">
 				</div>
 				<!-- --End of Gallery Section-- -->
 				<!-- --Close Wrapper-- -->
@@ -154,7 +151,7 @@
 					<h4 class="updated">Stay Updated</h4>
 					<p>Subscribe to our newsletter to stay updated</p>
 					<div class="email">
-						<label for="email">Email</label>
+						<label class="sr-only" for="email">Email</label>
 						<input type="email" placeholder="email address" email="emailAddress" id="email">
 						<button submit="#">subscribe</button>
 					</div>
@@ -162,15 +159,17 @@
 				</fieldset>
 				<fieldset class="contact" id="Contact">
 					<h4 class="contactTitle">Contact</h4>
-					<p>info@email.com| 123 - 456 7890
-					<p>123 some road, Toronto ON</p>
-					<p>A5A 5A5 Canada</p>
+					<div class="info">
+						<p>info@email.com| 123 - 456 7890
+						<p>123 some road, Toronto ON</p>
+						<p>A5A 5A5 Canada</p>
+					</div>
 				</fieldset>
 			</div>
 		</form>
 		<p class="copyright">Copyright @ 2019 HackerYou</p>
 	</footer>
-	<script scr="script.js"></script>
+	<script src="script.js"></script>
 </body>
 
 </html>

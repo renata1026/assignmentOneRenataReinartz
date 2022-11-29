@@ -12,10 +12,6 @@ html {
     font-family: $ffPrimary;
 }
 
-// h1 {
-//     line-height: $lhH1;
-// }
-
 h3 {
     font-family: $ffPrimary;
     text-transform: uppercase;
@@ -40,23 +36,35 @@ p {
 button {
     text-transform: uppercase;
     letter-spacing: 1px;
+    font-family: $ffSecondary;
     line-height: $lhButton;
     border: 1px solid $clrDark;
     padding: 0.6em 2em;
-    margin-top: 2em;
-    margin-bottom: 3em;
+    margin: 3em 0;
+
 }
 
-button a:hover,
-.blog button a:hover,
-a:focus {
-    background-color: $clrLightAccent;
+button:hover,
+button:focus {
+    background-color: #c3d3cd;
+    color: $clrDarkAccent;
+    border: 1px solid #c3d3cd;
 }
 
 @media (min-width:600px) {
-    .wrapper:not(.wrapper.hero) {
+
+    .wrapper {
         margin: 0 auto;
         width: 90%;
         max-width: 1200px;
+    }
+
+    button {
+        margin-top: 3em;
+        padding: 0.6em 2em;
+    }
+
+    .email button {
+        margin-top: 0;
     }
 }

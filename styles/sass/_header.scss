@@ -1,7 +1,6 @@
 @use 'variables' as *;
 
 // header section//
-
 .hero {
     position: relative;
 }
@@ -10,9 +9,10 @@
     display: block;
     width: 100vw;
     object-fit: cover;
+    object-fit: cover;
+    object-position: 33% 64%;
     object-position: 33% 64%;
     height: 600px;
-
 }
 
 img {
@@ -21,8 +21,9 @@ img {
 
 h1 {
     position: absolute;
-    top: 0.2em;
-    color: $clrLight;
+    top: 0em;
+    left: 1em;
+    color: #fcfcfc;
     text-transform: uppercase;
     opacity: 0.7;
     text-align: right;
@@ -32,31 +33,35 @@ h1 span {
     display: block;
 }
 
-@media (min-width:600px) {
-
+@media (min-width: 600px) {
     h1 {
         font-size: 90px;
         left: 7em;
+        top: 0.2em;
     }
 
     .social {
         position: absolute;
-        color: $clrLight;
+        color: #fcfcfc;
         font-size: 1.5rem;
         top: 15em;
         right: 1em;
         display: flex;
         flex-direction: column;
+    }
 
+    .fa-instagram:hover,
+    .fa-instagram:focus,
+    .fa-facebook-f:hover,
+    .fa-facebook-f:focus,
+    .fa-snapchat:hover,
+    .fa-snapchat:focus,
+    .fa-twitter:hover,
+    .fa-twitter:focus {
+        color: #c3d3cd;
     }
 
     i.fa-brands {
         margin: 0.5em;
     }
 }
-
-//     i.fa-brands a:hover,
-//     a:focus {
-//         color: $clrDarkAccent;
-//     }
-// }

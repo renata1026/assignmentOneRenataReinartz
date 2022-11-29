@@ -1,61 +1,13 @@
 @use 'variables' as *;
 
-.navMenu {
-
-    // position: absolute;
-    .nav-menu {
-        position: fixed;
-        left: -100%;
-        top: 70px;
-        gap: 0;
-        flex-direction: column;
-        align-items: flex-end;
-        background-color: $clrDarkAccent;
-        width: 100%;
-        text-align: center;
-        transition: 0.3s;
-    }
-
-    .nav-item {
-        margin: 16px 0;
-    }
-
-    .nav-menu.active {
-        left: 0;
-    }
-
-    li {
-        list-style: none;
-
-        a {
-            text-decoration: none;
-            color: $clrLight;
-            opacity: 0.8;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-    }
-
-    .navLink {
-        transition: 0.7s ease;
-    }
-
-    .navLink:hover {
-        color: blue;
-    }
-
-}
-
-
 /* The navbar */
-.topnav {
+.topNav {
     position: absolute;
     top: 1em;
     overflow: hidden;
-
 }
 
-.topnav li {
+.topNav li {
     padding: 0.5em;
 }
 
@@ -65,33 +17,52 @@
     display: block;
 }
 
-
-
 .hamburger .fa-solid {
     color: #fff;
     font-size: 3rem;
     position: absolute;
     bottom: 11em;
     right: 1em;
-
 }
 
-@media (min-width:600px) {
-    nav .wrapper ul {
-        display: flex;
-        flex-direction: row;
 
+.social,
+.navMenu {
+    display: none;
+}
+
+@media (min-width: 600px) {
+    .topNav {
+        ul {
+            display: flex;
+            flex-direction: row;
+
+            li {
+                list-style: none;
+
+                a {
+                    color: $clrLight;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                }
+            }
+        }
     }
 
-    .hamburger {
+    .topNav a:hover,
+    a:focus {
+        color: $clrLightAccent;
+    }
+
+    .hamburger .fa-solid {
         display: none;
         cursor: pointer;
-        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
     }
 
-    .hamburger.active {
-        opacity: 0;
-        transform: translateY(8px)rotate(45deg);
+    .navMenu {
+        display: inline;
     }
 
 
