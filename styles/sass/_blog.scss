@@ -35,6 +35,12 @@ span {
     color: $clrLight;
 }
 
+.blog button:hover,
+.blog button:focus {
+    background-color: $clrLight;
+    color: $clrDark;
+}
+
 @media (min-width:600px) {
 
     .blog-one,

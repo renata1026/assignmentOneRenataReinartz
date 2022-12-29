@@ -366,7 +366,7 @@ a {
           justify-content: center;
   background-color: #5a5a5a;
   position: fixed;
-  height: 50vh;
+  height: 800px;
   width: 100%;
   margin-top: 0;
   padding-left: 0;
@@ -541,7 +541,6 @@ h1 span {
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
-  padding-bottom: 1.2em;
   padding-top: 1.2em;
 }
 
@@ -550,6 +549,10 @@ h1 span {
   opacity: 0.5;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+.container img.image-3 {
+  padding-bottom: 1.2em;
 }
 
 .icons {
@@ -602,7 +605,7 @@ h1 span {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    gap: 5px;
+    gap: 10px;
   }
   .text span {
     display: block;
@@ -627,6 +630,7 @@ h1 span {
 @media (min-width: 1000px) {
   .container img.image-3 {
     display: inline;
+    padding-bottom: 0;
   }
 }
 footer {
@@ -790,6 +794,12 @@ span {
   background-image: -webkit-gradient(linear, left top, right top, from(#fb9790), to(#02262B));
   background-image: linear-gradient(to right, #fb9790, #02262B);
   color: #fefefe;
+}
+
+.blog button:hover,
+.blog button:focus {
+  background-color: #fefefe;
+  color: #032F33;
 }
 
 @media (min-width: 600px) {
@@ -958,7 +968,7 @@ button {
 button:hover,
 button:focus {
   background-color: #fb9790;
-  color: #5a5a5a;
+  color: #032F33;
   border: 1px solid #fb9790;
 }
 
