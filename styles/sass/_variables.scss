@@ -1,23 +1,17 @@
 //scss variables
 
 //font family//
-$ffPrimary: 'Fredericka the Great', cursive;
-$ffSecondary: 'Cormorant Garamond', serif;
-$ffBody: 'Roboto', sans-serif;
+$ffPrimary: 'Playfair Display', serif;
+$ffSecondary: 'vidaloka', serif;
+$ffBody: 'vidaloka', sans-serif;
 
 //font colors//
-$clrLight: #fcfcfc;
-$clrDark: #152D20;
-$clrLightAccent: #C3D3CB;
-$clrDarkAccent: black;
+$clrLight: #fefefe;
+$clrBody: #001B21;
+$clrDark: #032F33;
+$clrPinkAccent: #fb9790;
+$clrBrownAccent: #5a5a5a;
 
-//Desktop font size//
-//font size convert to REM//
-// H1: 120px;
-// HT: 51px;
-// H2: 35px;
-// Body: 20px;
-// Button: 18px;
 
 //Mobile
 @mixin fontSize($sizeValue) {
@@ -26,11 +20,11 @@ $clrDarkAccent: black;
 }
 
 h1 {
-    @include fontSize(40);
+    @include fontSize(20);
 }
 
 h2 {
-    @include fontSize(40);
+    @include fontSize(32);
 }
 
 h3 {
@@ -50,8 +44,9 @@ p {
     @include fontSize(14);
 }
 
-footer p {
-    @include fontSize(16);
+footer a,
+footer ul {
+    @include fontSize(15);
 }
 
 footer h4 {
@@ -67,22 +62,3 @@ $lhH1: 117px;
 $lhBody: 29px;
 $lhButton: 29px;
 $lhContact: 26px;
-
-
-// @media (min-width:600px) {
-//     h1 {
-//         font-size: 120px;
-//     }
-
-//     h2 {
-//         font-size: 35px;
-//     }
-
-//     p {
-//         font-size: 20px;
-//     }
-
-//     button {
-//         font-size: 18px;
-//     }
-// }

@@ -12,9 +12,7 @@ footer h4 {
 }
 
 footer ul {
-    display: flex;
-    justify-content: center;
-
+    display: none;
 }
 
 footer li {
@@ -27,7 +25,7 @@ footer a {
     font-family: $ffSecondary;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 1em;
+    // padding: 1em;
 
 }
 
@@ -43,9 +41,9 @@ fieldset button {
 }
 
 fieldset button {
-    background-color: $clrDarkAccent;
+    background-color: $clrPinkAccent;
     color: $clrLight;
-    border: 1px solid $clrDarkAccent;
+    border: 1px solid $clrPinkAccent;
     margin-top: 1em;
     margin-bottom: 0.5em;
 }
@@ -54,19 +52,16 @@ fieldset button {
     margin: 0 auto;
 }
 
-.contact h4 {
-    margin-top: 1em;
-}
 
 .updated,
-.contactTitle {
+.contact-title {
     line-height: $lhContact;
     // margin: 1em 0;
     text-transform: uppercase;
 }
 
 .copyright {
-    background-color: $clrDarkAccent;
+    background-color: $clrBrownAccent;
     padding: 0.5em;
 }
 
@@ -85,6 +80,7 @@ fieldset button {
     footer ul {
         display: flex;
         flex-direction: column;
+        margin: 0;
 
     }
 

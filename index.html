@@ -7,167 +7,151 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Fredericka+the+Great&family=Roboto:wght@300&display=swap"
-		rel="stylesheet">
+	<!-- Add Google Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;900&display=swap" rel="stylesheet">
+	<!-- Add icon library -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+	<!-- Add Stylesheet -->
 	<link rel="stylesheet" href="./styles/styles.css">
-	<title>Document</title>
 </head>
 
 <body>
-	<!-- --Start of Header-- -->
-	<header>
-		<!-- --Start of Navigation-- -->
-		<nav>
-			<div class="hero" id="Home">
-				<img src="images/image-1.jpg">
-				<h1>Animal <span>Refuge</span></h1>
-			</div>
-			<!--hamburger menu-->
-			<div class="wrapper">
-				<div class="hamburger">
-					<i class="fa-solid fa-bars"></i>
-				</div>
-				<div class="topNav">
-					<ul class="navMenu">
-						<li class="navItem"><a href="#Home" class=navLink>Home</a></li>
-						<li class="navItem"><a href="#About" class=navLink>About</a></li>
-						<li class="navItem"><a href="#Blog" class=navLink>Blog</a></li>
-						<li class="navItem"><a href="#Contact" class=navLink>Contact</a></li>
-					</ul>
-				</div>
-				<div class="social">
-					<i class="fa-brands fa-instagram"></i>
-					<i class="fa-brands fa-facebook-f"></i>
-					<i class="fa-brands fa-snapchat"></i>
-					<i class="fa-brands fa-twitter"></i>
-				</div>
-				<!-- --Close Wrapper-- -->
-			</div>
-			<!-- --End of Navigation-- -->
-		</nav>
-
-		<!-- --End of Header-- -->
+	<header><!-- --Start of Header-- -->
+		<title>Birds of Paradise</title>
+		<nav><!-- --Start of Navigation-- -->
+			<div class="hamburger" id="hamburger"><!--hamburger nav-menu-->
+				<i class="fa-solid fa-bars hamburger-icon"></i>
+				<div class="mobile-menu">
+					<ul class="mobile-nav-menu none">
+						<li><a href="#about" class="mobile">About</a></li>
+						<li><a href="#discover" class="mobile">Discover</a></li>
+						<li><a href="#blog" class="mobile">Blog</a></li>
+						<li><a href="#contact" class="mobile">Contact</a></li>
+					</ul><!--Close out mobile nav nav-menu -->
+				</div><!--Close out mobile-menu -->
+			</div><!-- Close out hamburger-->
+			<ul class="nav-menu">
+				<li class="active"><a href="#about">About</a></li>
+				<li><a href="#discover">Discover</a></li>
+				<li><a href="#blog">Blog</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul><!----close out nav-menu-->
+		</nav><!-- --close out Navigation-- -->
+		<div class="header-text">
+			<h1>Birds of <span class="new-line">Paradise</span></h1>
+		</div><!--close out header-text-->
+		<div class="social">
+			<i class="fa-brands fa-instagram"></i>
+			<i class="fa-brands fa-facebook-f"></i>
+			<i class="fa-brands fa-twitter"></i>
+		</div><!-- --Close Social-- -->
+		<!-- --closese of Header-- -->
 	</header>
 	<main>
 		<!-- --Start of About Section-- -->
-		<section class="about" id="About">
+		<section class="about" id="about">
 			<!-- --Start of Wrapper-- -->
 			<div class="wrapper">
 				<div class="left">
-					<img src="images/image-6.jpg" alt="A beautiful cat Suzie sleeping on a pillow">
-				</div>
+					<img src="./assets/image-6.jpg" alt="A headshot of Birds of Paradise founder">
+				</div><!-- --Close left-- -->
 				<div class="right">
-					<h2>Suzie's Story</h2>
+					<h2>About Us!</h2>
 					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia necessitatibus voluptate
-						distinctio id ut assumenda saepe in eligendi optio cumque architecto voluptates corrupti ex
+						distinctio id ut assumclosea saepe in eligclosei optio cumque architecto voluptates corrupti ex
 						nostrum laboriosam, possimus voluptatibus dolores laudantium!
 						Quibusdam maxime, fugit a quos labore earum quasi unde sit expedita facere consequatur, dolorem,
 						nihil autem. Deleniti ipsam doloribus quisquam atque iusto corporis eaque, ad, sed molestias</p>
 					<button>Read More</button>
-				</div>
-				<!-- --Close Wrapper-- -->
-			</div>
-			<!-- --End of About Section-- -->
-		</section>
+				</div><!-- --Close right-- -->
+			</div><!-- --Close Wrapper-- -->
+		</section><!-- --close out About Section-- -->
 		<!-- --Start of Gallery Section-- -->
-		<section class="gallery">
-			<!-- --Start of Wrapper-- -->
-			<div class="wrapper">
-				<div class="text">
-					<h2>Some of our <span>friends</span></h2>
-				</div>
-				<div class="images">
-					<img src="images/image-5.jpg" class="image1" alt="iguana on a tree">
-					<img src="images/image-4.jpg" class="image2" alt="sheep out on a field">
-					<img src="images/image-3.jpg" class="image3" alt="a parrot eating food">
-				</div>
-				<!-- --End of Gallery Section-- -->
-				<!-- --Close Wrapper-- -->
-			</div>
-		</section>
+		<section class="gallery" id="discover">
+			<h2> Say Hello <span class="new-line">To Our </span><span class="new-line">Feathered Fricloses!</span></h2>
+			<div class="container">
+				<img src="./assets/image-8.jpg" class="image-1" alt="A colorful toucan perched on a branch.">
+				<img src="./assets/image-4.jpg" class="image-2" alt="A green lovebird perched on a branch.">
+				<img src="./assets/image-5.jpg" class="image-3"
+					alt="A beautiful male peacock with his feathers spread out.">
+			</div><!-- --Close container-- -->
+		</section><!-- --Close gallery-- -->
 		<section class="icons">
-			<i class="fa-solid fa-paw">
-				<h4>Animal <span>Spotlight</span></h4>
+			<i class="fa-solid fa-feather">
+				<h4>Bird Facts</h4>
 			</i>
 			<i class="fa-solid fa-calendar-check">
-				<h4>Events</h4>
+				<h4>Calendar</h4>
 			</i>
-			<i class="fa-solid fa-bag-shopping">
-				<h4>Merch</h4>
+			<i class="fa-solid fa-hand-holding-dollar">
+				<h4>Donate</h4>
 			</i>
-		</section>
-		<article class="blog" id="Blog">
-			<div class="blogOne">
-				<div class="blogImageOne">
-					<img src="images/image-7.jpg" alt="Two zebras in the jungle.">
-				</div>
-				<div class="textOne">
-					<h3>Fascinating Facts <span>About Zebras</span></h3>
+		</section><!-- --Close icons-- -->
+		<article class="blog" id="blog">
+			<div class="blog-one">
+				<div class="blog-image-one">
+					<img src="./assets/image-7.jpg" alt="A group of colorful pigeons.">
+				</div><!-- --Close blog-image-one-- -->
+				<div class="text-one">
+					<h3>Amazing Facts <span>About Birds</span></h3>
 					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab vero quaerat aperiam praesentium
 						libero facilis, voluptate sequi at odio magnam inventore voluptatum quasi natus, laudantium
 						ut saepe, ipsa excepturi animi!
 					</p>
 					<button>Read More</button>
-					<!-- --End of textOne-- -->
-				</div>
-				<!-- --End of blogOne-- -->
-			</div>
-			<div class="blogTwo">
-				<div class="blogImageTwo">
-					<img src="images/image-2.jpg" alt="Two zebras in the jungle.">
-				</div>
-				<div class="textTwo">
-					<h3>The Bond Between <span>Animals and Humans</span></h3>
+				</div><!-- --close out text-one-- -->
+			</div><!-- --close out blog-one-- -->
+			<div class="blog-two">
+				<div class="blog-image-two">
+					<img src="./assets/image-3.jpg"
+						alt="A small green parrot with it's head tilted to the right, sitting on a rock.">
+				</div><!-- --close out blog-image-two-- -->
+				<div class="text-two">
+					<h3>The Bond Between <span>Birds</span></h3>
 					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab vero quaerat aperiam praesentium
 						libero facilis, voluptate sequi at odio magnam inventore voluptatum quasi natus, laudantium
 						ut saepe, ipsa excepturi animi!
 					</p>
 					<button>Read More</button>
-					<!-- --End of textTwo-- -->
-				</div>
-			</div>
-			<!-- --End of Wrapper-- -->
-			</div>
-		</article>
+					<!-- --close out text-two-- -->
+				</div><!-- --close out text-two-- -->
+			</div><!-- --close out blog-two-- -->
+		</article><!-- --close out blog-- -->
 	</main>
 
-	<footer>
+	<footer class="footer" id="contact">
 		<form action="submit">
 			<div class="wrapper">
 				<nav>
 					<div class="wrapper">
 						<ul>
-							<li><a href="#Home">Home</a></li>
-							<li><a href="#About">About</a></li>
-							<li><a href="#Blog">Blog</a></li>
-							<li><a href="#Contact">Contact</a></li>
-						</ul>
-						<!-- --End of Navigation-- -->
-					</div>
-				</nav>
+							<li><a href="#about">About</a></li>
+							<li><a href="#discover">Discover</a></li>
+							<li><a href="#blog">Blog</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul><!-- --close out ul-- -->
+					</div><!-- --close out wrapper-- -->
+				</nav><!-- --close out navigation-- -->
 				<fieldset class="subscribe">
 					<h4 class="updated">Stay Updated</h4>
 					<p>Subscribe to our newsletter to stay updated</p>
 					<div class="email">
 						<label class="sr-only" for="email">Email</label>
-						<input type="email" placeholder="email address" email="emailAddress" id="email">
+						<input type="email" placeholder="email address" email="email-address" id="email">
 						<button submit="#">subscribe</button>
-					</div>
-
-				</fieldset>
-				<fieldset class="contact" id="Contact">
-					<h4 class="contactTitle">Contact</h4>
+					</div><!-- --close out email-- -->
+				</fieldset><!-- --close out fieldset-- -->
+				<fieldset class="contact" id="contact">
+					<h4 class="contact-title">Contact</h4>
 					<div class="info">
-						<p>info@email.com| 123 - 456 7890
-						<p>123 some road, Toronto ON</p>
-						<p>A5A 5A5 Canada</p>
-					</div>
-				</fieldset>
-			</div>
+						<p>renata.codes.dev@gmail.com
+						<p>Calgary AB,Canada</p>
+					</div><!-- --close out info-- -->
+				</fieldset><!-- --close out fieldset-- -->
+			</div><!-- --close out wrapper-- -->
 		</form>
-		<p class="copyright">Copyright @ 2019 HackerYou</p>
+		<p class="copyright">Developed By <a href="https://www.renata-reinartz.com/"> Renata Reinartz</a> for <a
+				href="https://junocollege.com/">Juno College</a></p>
 	</footer>
 	<script src="script.js"></script>
 </body>

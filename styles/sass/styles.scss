@@ -7,6 +7,9 @@
 @use 'blog';
 @use 'about';
 
+img {
+    display: block;
+}
 
 html {
     font-family: $ffPrimary;
@@ -38,7 +41,7 @@ button {
     letter-spacing: 1px;
     font-family: $ffSecondary;
     line-height: $lhButton;
-    border: 1px solid $clrDark;
+    border: 1px solid $clrBrownAccent;
     padding: 0.6em 2em;
     margin: 3em 0;
 
@@ -46,9 +49,9 @@ button {
 
 button:hover,
 button:focus {
-    background-color: #c3d3cd;
-    color: $clrDarkAccent;
-    border: 1px solid #c3d3cd;
+    background-color: $clrPinkAccent;
+    color: $clrBrownAccent;
+    border: 1px solid $clrPinkAccent;
 }
 
 @media (min-width:600px) {

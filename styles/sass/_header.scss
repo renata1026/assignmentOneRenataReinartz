@@ -5,39 +5,53 @@
     position: relative;
 }
 
-.hero img {
-    display: block;
-    width: 100vw;
-    object-fit: cover;
-    object-fit: cover;
-    object-position: 33% 64%;
-    object-position: 33% 64%;
-    height: 600px;
+header {
+    background-image: url("../assets/image-1.jpg");
+    height: 75vh;
+    background-size: cover;
+    background-color: #5a5a5a;
+    background-blend-mode: multiply;
+    width: 100%;
 }
 
 img {
     max-width: 100%;
 }
 
+.header-text {
+    position: relative;
+}
+
 h1 {
     position: absolute;
-    top: 0em;
-    left: 1em;
-    color: #fcfcfc;
+    top: 1em;
+    left: 1.2em;
+    text-align: center;
+    letter-spacing: 2px;
+    color: $clrLight;
+    margin: 0;
+
+}
+
+.header-text p {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
     text-transform: uppercase;
-    opacity: 0.7;
-    text-align: right;
+    text-align: center;
+    color: #fb9790;
+
 }
 
 h1 span {
     display: block;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 1000px) {
     h1 {
         font-size: 90px;
-        left: 7em;
-        top: 0.2em;
+        position: absolute;
+        left: 4em;
+        top: 2em;
     }
 
     .social {
@@ -58,7 +72,7 @@ h1 span {
     .fa-snapchat:focus,
     .fa-twitter:hover,
     .fa-twitter:focus {
-        color: #c3d3cd;
+        color: $clrPinkAccent;
     }
 
     i.fa-brands {
