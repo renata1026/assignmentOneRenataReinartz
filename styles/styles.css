@@ -529,13 +529,12 @@ h1 span {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
 .container img {
-  width: 375px;
+  width: 90%;
   height: 400px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -591,21 +590,8 @@ h1 span {
 }
 
 @media (min-width: 600px) {
-  .container img.image-3 {
-    display: none;
-  }
   .gallery {
     padding-bottom: 1.2em;
-  }
-  .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    gap: 10px;
   }
   .text span {
     display: block;
@@ -625,6 +611,24 @@ h1 span {
   }
   .icons h4 {
     font-size: 35px;
+  }
+}
+@media (min-width: 800px) {
+  .container img.image-3 {
+    display: none;
+  }
+  .container img {
+    width: 375px;
+  }
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 10px;
   }
 }
 @media (min-width: 1000px) {
@@ -798,7 +802,7 @@ span {
 
 .blog button:hover,
 .blog button:focus {
-  background-color: #fefefe;
+  background-image: #fefefe;
   color: #032F33;
 }
 
@@ -903,6 +907,7 @@ h2 {
   .left img {
     width: 100%;
     height: auto;
+    margin: 0;
   }
   .left {
     -ms-flex-preferred-size: 29%;
@@ -959,6 +964,7 @@ button {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-family: "vidaloka", serif;
+  color: #032F33;
   line-height: 29px;
   border: 1px solid #5a5a5a;
   padding: 0.6em 2em;

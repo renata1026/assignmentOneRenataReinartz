@@ -16,17 +16,18 @@
 .container {
     display: flex;
     justify-content: center;
-    width: 100%;
+    // width: 100%;
     // max-width: 1600px;
     flex-wrap: wrap;
 }
 
 .container img {
-    width: 375px;
+    width: 90%;
     height: 400px;
     object-fit: cover;
     object-position: top;
     padding-top: 1.2em;
+    // flex-basis: 90%;
     // margin-top: 1em;
 }
 
@@ -72,19 +73,12 @@
 
 @media (min-width:600px) {
 
-    .container img.image-3 {
-        display: none;
-    }
 
     .gallery {
         padding-bottom: 1.2em;
     }
 
-    .container {
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-    }
+
 
     .text span {
         display: block;
@@ -103,7 +97,25 @@
     }
 }
 
+@media (min-width:800px) {
+    .container img.image-3 {
+        display: none;
+    }
+
+    .container img {
+        width: 375px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+}
+
 @media (min-width:1000px) {
+
     .container img.image-3 {
         display: inline;
         padding-bottom: 0;
